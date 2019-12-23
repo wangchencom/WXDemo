@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+  <!-- 数据绑定类似于angular -->
+    <text class="user-motto">{{testd}}</text>
+  </view>
+
+
+  <!-- 简单数据绑定 -->
+  <!-- 就是生成动态id属性 -->
+  <view id="item-{{id}}"></view>
+  <!-- 类似于angular 动态显示或者隐藏此行  猜测也可以用于样式表 -->
+  <view wx:if="{{condition}}">111</view>
+
+  <!-- 可以在Mustache {{]}语法中进行简单运算 -->
+  <view>{{}}</view>
+
+
+
+
+  <!-- wx:for 直接循环数组 value 直接填 {{item}} 就可以取到值 -->
+  <view wx:for="{{array}}">{{item}}</view>
+  <!-- wx:if 直接判断  -->
+  <view wx:if="{{view == 'webvier'}}">webvier</view>
+  <view wx:elif="{{view == 'MIA'}}">er</view>
+  <!-- wx:else 类似于else 实验可以不用设置表达式 -->
+  <view wx:else="{{}}">MINA</view>
+</view>
