@@ -17,5 +17,10 @@
 }
 
 .usermotto {
-  margin-top: 100px;
+  margin-top: 10px;
+}
+.img-noob {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
 }

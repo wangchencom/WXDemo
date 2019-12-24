@@ -7,6 +7,11 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <view>
+    <image bindtap="chicktotestview" src="../img/35328346.jpg" class="img-noob"></image>
+  </view>
+
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
@@ -14,25 +19,29 @@
   <!-- 数据绑定类似于angular -->
     <text class="user-motto">{{testd}}</text>
   </view>
-
+  <!-- 定义点击触发 使用关键字 bindtap -->
+  <!-- <view bindtap="chicktotestview">跳转到testview</view> -->
 
   <!-- 简单数据绑定 -->
   <!-- 就是生成动态id属性 -->
-  <view id="item-{{id}}"></view>
+  <!-- <view id="item-{{id}}"></view> -->
   <!-- 类似于angular 动态显示或者隐藏此行  猜测也可以用于样式表 -->
-  <view wx:if="{{condition}}">111</view>
+  <!-- <view wx:if="{{condition}}">111</view> -->
 
-  <!-- 可以在Mustache {{]}语法中进行简单运算 -->
-  <view>{{}}</view>
+  <!-- 可以在Mustache {{}}语法中进行简单运算 -->
+  <!-- <view>{{{{a + b}} + {{c}} + d}}</view> -->
+  <!-- <view>{{a+b}}+{{c}}+d</view> -->
+
+  <!--  -->
 
 
 
 
   <!-- wx:for 直接循环数组 value 直接填 {{item}} 就可以取到值 -->
-  <view wx:for="{{array}}">{{item}}</view>
+  <!-- <view wx:for="{{array}}">{{item}}</view> -->
   <!-- wx:if 直接判断  -->
-  <view wx:if="{{view == 'webvier'}}">webvier</view>
-  <view wx:elif="{{view == 'MIA'}}">er</view>
+  <!-- <view wx:if="{{view == 'webvier'}}">webvier</view> -->
+  <!-- <view wx:elif="{{view == 'MIA'}}">er</view> -->
   <!-- wx:else 类似于else 实验可以不用设置表达式 -->
-  <view wx:else="{{}}">MINA</view>
+  <!-- <view wx:else="{{}}">MINA</view> -->
 </view>

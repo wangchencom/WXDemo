@@ -9,6 +9,7 @@ Page({
     array: [1, 2, 3, 4, 5],
     a: 1,
     b: 3,
+    c: 4,
     d: 5,
     id: 1,
     condition: false,
@@ -23,6 +24,12 @@ Page({
     wx.navigateTo({
       //跳转页面
       url: '../logs/logs'
+    })
+  },
+  chicktotestview: function(){
+    //跳转方法
+    wx.navigateBack({
+      url: '../testview/testview'
     })
   },
   onLoad: function () {
