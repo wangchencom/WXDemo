@@ -28,7 +28,7 @@ Page({
   },
   chicktotestview: function(){
     //跳转方法
-    wx.navigateBack({
+    wx.navigateTo({
       url: '../testview/testview'
     })
   },
