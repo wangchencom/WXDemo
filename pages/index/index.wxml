@@ -16,7 +16,9 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view>
-  <!-- 数据绑定类似于angular -->
+
+    <!-- 数据绑定类似于angular -->
+
     <text class="user-motto">{{testd}}</text>
   </view>
   <!-- 定义点击触发 使用关键字 bindtap -->
@@ -45,3 +47,4 @@
   <!-- wx:else 类似于else 实验可以不用设置表达式 -->
   <!-- <view wx:else="{{}}">MINA</view> -->
 </view>
+
