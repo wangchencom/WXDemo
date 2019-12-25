@@ -16,7 +16,7 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view>
-  <!-- 数据绑定类似于angular -->
+    <!-- 数据绑定类似于angular -->
     <text class="user-motto">{{testd}}</text>
   </view>
   <!-- 定义点击触发 使用关键字 bindtap -->
