@@ -3,5 +3,22 @@
   <!-- <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block> -->
-  (╥╯﹏╰╥)ง光宗耀祖支撑着我去教室
+  <view>(╥╯﹏╰╥)ง光宗耀祖支撑着我去教室</view>
+
+</view>
+<!-- 模板 -->
+<view>
+  <template name="staffName">
+    <view>
+      FirstName: {{firstName}}, LastName: {{lastName}}
+    </view>
+  </template>
+
+  <template is="staffName" data="{{...staffA}}"></template>
+  <template is="staffName" data="{{...staffB}}"></template>
+  <template is="staffName" data="{{...staffC}}"></template>
+</view>
+<!-- 对象 -->
+<view>
+  <template is="objectCombine" data="{{for: a, bar: b}}"></template>
 </view>

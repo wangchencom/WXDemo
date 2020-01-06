@@ -34,9 +34,6 @@
 
   <!--  -->
 
-
-
-
   <!-- wx:for 直接循环数组 value 直接填 {{item}} 就可以取到值 -->
   <!-- <view wx:for="{{array}}">{{item}}</view> -->
   <!-- wx:if 直接判断  -->
